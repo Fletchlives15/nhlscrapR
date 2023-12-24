@@ -1,12 +1,23 @@
 Package: nhlscrapR
-Title: What the Package Does (One Line, Title Case)
+Title: NHL API scraper
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Fletcher", "Ekern", , "fletcher.ekern@gmail.com", role = c("aut", "cre"))
+Description: Series of functions that scrap the NHL API for analysis. Functions have some different inputs, 
+    however at the core just input seasons you want to see and for which teams. 
+License: MIT + file LICENSE
+Imports:
+  data.table, 
+  janitor, 
+  tidyr, 
+  dplyr, 
+  jsonlite, 
+  purrr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/Fletchlives15/nhlscrapR
+BugReports: https://github.com/Fletchlives15/nhlscrapR/issues
