@@ -1,7 +1,9 @@
 #' @importFrom jsonlite toJSON unbox
 #' @import data.table
 #' @importFrom janitor clean_names
-#' @import tidyverse
+#' @import dplyr
+#' @import purrr
+#' @import tidyr
 
 roster_data <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR", "SEN", "HAM", "PIR", "QUA", "DCG",
                                          "MWN", "QBD", "MMR", "NYA", "SLE", "OAK", "AFM", "KCS", "CLE", "DFL", "BRK",
@@ -11,10 +13,6 @@ roster_data <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR
                                          "MIN", "STL", "OTT"),
                         year_start = 2013,
                         year_end = 2024){
-
-
-  ### packages
-  pacman::p_load(data.table, tidyverse, httr, jsonlite, stringr)
 
   ### Pull Togethers
   ## team set ups for rosters

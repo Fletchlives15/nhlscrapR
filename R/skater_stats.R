@@ -1,3 +1,10 @@
+#' @importFrom jsonlite toJSON unbox
+#' @import data.table
+#' @importFrom janitor clean_names
+#' @import dplyr
+#' @import purrr
+#' @import tidyr
+
 skater_stats <- function(year_start = 2013, year_end = 2024){
 
   season_ids <- map_dbl(year_start:year_end, function(x){
