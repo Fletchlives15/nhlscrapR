@@ -1,4 +1,4 @@
-#' @importFrom jsonlite toJSON unbox
+#' @importFrom jsonlite fromJSON
 #' @import data.table
 #' @importFrom janitor clean_names
 #' @import dplyr

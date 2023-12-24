@@ -1,4 +1,4 @@
-#' @importFrom jsonlite toJSON unbox
+#' @importFrom jsonlite fromJSON
 #' @import data.table
 #' @importFrom janitor clean_names
 #' @import dplyr
@@ -17,13 +17,15 @@ skater_stats <- function(year_start = 2013, year_end = 2024){
 
   })
 
-  season_ids <- season_ids[season_ids <= 20232024] # needs better logic here so can run on own
+  end_season_id <- as.numeric(paste0(year_end - 1, year_end, sep = "")) # last season id in function
 
-  stats <- map_df(1:10, function(x){
+  season_ids <- season_ids[season_ids <= end_season_id] # needs better logic here so can run on own
 
-      map_df(season_ids, function(y){
+  stats <- map_df(1:10, function(page){
 
-        fromJSON(paste0("https://api.nhle.com/stats/rest/en/skater/summary?limit=",x * 100,"&start=",x * 100 - 99,"&cayenneExp=seasonId=",y))$data
+      map_df(season_ids, function(season){
+
+        fromJSON(paste0("https://api.nhle.com/stats/rest/en/skater/summary?limit=",page * 100,"&start=",page * 100 - 99,"&cayenneExp=seasonId=",season))$data
 
      })
   })
