@@ -5,7 +5,7 @@
 #' @import purrr
 #' @import tidyr
 
-roster_data <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR", "SEN", "HAM", "PIR", "QUA", "DCG",
+roster_info <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR", "SEN", "HAM", "PIR", "QUA", "DCG",
                                          "MWN", "QBD", "MMR", "NYA", "SLE", "OAK", "AFM", "KCS", "CLE", "DFL", "BRK",
                                          "NJD", "CGS", "TAN", "TSP", "DET", "BOS", "WPG", "SJS", "PIT", "TBL", "PHI",
                                          "TOR", "BUF", "CAR", "ARI", "CGY", "MTL", "WSH", "LAK", "VAN", "COL", "NSH",
@@ -83,7 +83,8 @@ roster_data <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR
 
       # rename united player first name and last name columns
       year_roster_rename <- year_roster |>
-        unite(col = "full_name", x12, x13, sep = " ")
+        unite(col = "full_name", x12, x13, sep = " ") |>
+        relocate(full_name, .before = headshot)
 
       # return data.table with team abbrev, season_id for that year, and then the player details
       return(data.table(team = team_abbrev,
