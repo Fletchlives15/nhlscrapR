@@ -2,6 +2,8 @@
 # nhlscrRaper
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/Fletchlives15/nhlscRaper/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Fletchlives15/nhlscRaper/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
 The goal of nhlscrRaper is to allow someone to scrape data from the NHL API to be used in analysis. Currently, functions pull rosters, skater/goalie summary stats, team information, game information, and event data for single game or full date range (specified through game ids).
@@ -9,7 +11,7 @@ The goal of nhlscrRaper is to allow someone to scrape data from the NHL API to b
 ## Installation
 
 1. If not already downloaded: `install.packages("devtools")`
-2. To install package: `devtools::install_github("Fletchlives15/nhlscRaper")`
+2. To install package: `devtools::install_github("Fletchlives15/nhlscRaper")` or `install.packages("nhlscRaper")`
 3. Lastly, call package: `library(nhlscRaper)`
 
 ## Functions
