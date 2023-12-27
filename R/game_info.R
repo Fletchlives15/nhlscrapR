@@ -20,7 +20,7 @@ game_info <- function(year_start, year_end){
   ## filtering of seasons played
   # filters seasons between start and end.
   games_filt <- games |>
-    filter(between(season, start_season_id, end_season_id),
+    filter(dplyr::between(season, start_season_id, end_season_id),
            game_type <= 3) |>
     rename(game_id = id, season_id = season) |>
     mutate(eastern_start_time = ymd_hms(eastern_start_time)) |>

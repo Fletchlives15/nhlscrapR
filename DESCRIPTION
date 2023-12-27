@@ -1,4 +1,4 @@
-Package: nhlscrapR
+Package: nhlscrRaper
 Title: NHL API scraper
 Version: 0.0.0.9000
 Authors@R: 
@@ -13,7 +13,9 @@ Imports:
   dplyr, 
   jsonlite, 
   purrr, 
-  lubridate
+  lubridate, 
+  parallel,
+  doParallel
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3

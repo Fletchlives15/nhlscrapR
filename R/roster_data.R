@@ -43,7 +43,7 @@ roster_data <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR
   ## filtering of seasons played
   # filters seasons between start and end.
   season_played_filt <- season_played |>
-    filter(between(season_id, start_season_id, end_season_id))
+    filter(dplyr::between(season_id, start_season_id, end_season_id))
 
   ## pulling together of rosters of each team for each season
   player_info <- map_df(unique(season_played_filt$team), function(team_abbrev){

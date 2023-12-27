@@ -1,3 +1,6 @@
+#' @import doParallel
+#' @import parallel
+
 all_game_events <- function(game_ids){
 
   cl <- makeCluster(detectCores())
