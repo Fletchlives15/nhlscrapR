@@ -1,5 +1,8 @@
 #' @import doParallel
 #' @import parallel
+#'
+#' @export
+#'
 
 all_game_events <- function(game_ids){
 

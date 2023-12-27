@@ -4,6 +4,9 @@
 #' @import dplyr
 #' @import purrr
 #' @import tidyr
+#'
+#' @export
+#'
 
 skater_stats <- function(year_start, year_end){
 

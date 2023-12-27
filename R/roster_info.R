@@ -4,6 +4,9 @@
 #' @import dplyr
 #' @import purrr
 #' @import tidyr
+#'
+#' @export
+#'
 
 roster_info <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR", "SEN", "HAM", "PIR", "QUA", "DCG",
                                          "MWN", "QBD", "MMR", "NYA", "SLE", "OAK", "AFM", "KCS", "CLE", "DFL", "BRK",

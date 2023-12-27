@@ -1,6 +1,9 @@
 #' @importFrom jsonlite fromJSON
 #' @import data.table
 #' @importFrom janitor clean_names
+#'
+#' @export
+#'
 
 
 game_events <- function(game_id){

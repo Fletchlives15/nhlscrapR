@@ -4,6 +4,9 @@
 #' @import dplyr
 #' @import tidyr
 #' @importFrom lubridate ymd_hms
+#'
+#' @export
+#'
 
 ### function to pull games between seasons
 ## game type 1 = preseason, 2 = reg season, 3 = post season

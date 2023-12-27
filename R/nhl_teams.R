@@ -3,6 +3,9 @@
 #' @importFrom janitor clean_names
 #' @import dplyr
 #' @import tidyr
+#'
+#' @export
+#'
 
 nhl_teams <- function(){
 
