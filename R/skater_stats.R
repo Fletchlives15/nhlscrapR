@@ -7,6 +7,8 @@
 
 skater_stats <- function(year_start = 2013, year_end = 2024){
 
+  strt <- Sys.time()
+
   season_ids <- map_dbl(year_start:year_end, function(x){
 
     next_year <-  x+1
@@ -35,6 +37,8 @@ skater_stats <- function(year_start = 2013, year_end = 2024){
     relocate(season_id, team_abbrevs, player_id, skater_full_name, position_code, shoots_catches, .before = 1) |>
     select(-last_name)
 
-    return(stats_clean)
+  print(Sys.time() - strt)
+
+  return(stats_clean)
 
 }
