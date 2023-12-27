@@ -5,7 +5,7 @@
 #' @import purrr
 #' @import tidyr
 
-skater_stats <- function(year_start = 2013, year_end = 2024){
+skater_stats <- function(year_start, year_end){
 
   strt <- Sys.time()
 

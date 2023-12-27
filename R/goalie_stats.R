@@ -5,7 +5,9 @@
 #' @import purrr
 #' @import tidyr
 
-goalie_stats <- function(year_start = 2013, year_end = 2024){
+goalie_stats <- function(year_start, year_end){
+
+  strt <- Sys.time()
 
   season_ids <- map_dbl(year_start:year_end, function(x){
 
@@ -34,6 +36,8 @@ goalie_stats <- function(year_start = 2013, year_end = 2024){
     janitor::clean_names() |>
     relocate(season_id, team_abbrevs, player_id, goalie_full_name, shoots_catches, .before = 1) |>
     select(-last_name)
+
+  print(Sys.time()-strt)
 
   return(stats_clean)
 

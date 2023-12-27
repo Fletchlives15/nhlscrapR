@@ -3,6 +3,8 @@
 
 all_game_events <- function(game_ids){
 
+  strt <- Sys.time()
+
   cl <- makeCluster(detectCores())
   registerDoParallel(cl)
 
@@ -12,6 +14,7 @@ all_game_events <- function(game_ids){
     {game_events(i)}
 
   print(Sys.time()-strt)
+
   stopCluster(cl)
 
   return(events)

@@ -11,11 +11,13 @@ roster_data <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR
                                          "TOR", "BUF", "CAR", "ARI", "CGY", "MTL", "WSH", "LAK", "VAN", "COL", "NSH",
                                          "ANA", "VGK", "NYI", "SEA", "DAL", "PHX", "CHI", "NYR", "CBJ", "FLA", "EDM",
                                          "MIN", "STL", "OTT"),
-                        year_start = 2013,
-                        year_end = 2024){
+                        year_start,
+                        year_end){
+
+  strt <- Sys.time()
 
   ### Pull Togethers
-  ## team set ups for rosters
+  ## Team set ups for rosters
   # pulls from API for teams
   teams <- data.table(fromJSON("https://api.nhle.com/stats/rest/en/team")$data) |>
     janitor::clean_names() |>
@@ -91,6 +93,8 @@ roster_data <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR
     })
 
   })
+
+  print(Sys.time()-strt)
 
   # return the player info
   return(player_info)

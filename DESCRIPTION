@@ -3,8 +3,7 @@ Title: NHL API scraper
 Version: 0.0.0.9000
 Authors@R: 
     person("Fletcher", "Ekern", , "fletcher.ekern@gmail.com", role = c("aut", "cre"))
-Description: Series of functions that scrap the NHL API for analysis. Functions have some different inputs, 
-    however at the core just input seasons you want to see and for which teams. 
+Description: Series of functions that scrape the NHL API.
 License: MIT + file LICENSE
 Imports:
   data.table, 
