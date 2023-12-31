@@ -19,6 +19,27 @@
     <loc>https://fletchlives15.github.io/nhlscRaper/news/index.html</loc>
   </url>
   <url>
+    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_game_events.html</loc>
+  </url>
+  <url>
+    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_game_info.html</loc>
+  </url>
+  <url>
+    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_goalie_stats.html</loc>
+  </url>
+  <url>
+    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_multi_game_events.html</loc>
+  </url>
+  <url>
+    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_nhl_teams.html</loc>
+  </url>
+  <url>
+    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_roster_info.html</loc>
+  </url>
+  <url>
+    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_skater_stats.html</loc>
+  </url>
+  <url>
     <loc>https://fletchlives15.github.io/nhlscRaper/reference/index.html</loc>
   </url>
 </urlset>
