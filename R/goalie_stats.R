@@ -1,9 +1,8 @@
 #' @importFrom jsonlite fromJSON
-#' @import data.table
+#' @importFrom data.table data.table
 #' @importFrom janitor clean_names
-#' @import dplyr
-#' @import purrr
-#' @import tidyr
+#' @importFrom dplyr relocate select arrange between where
+#' @importFrom purrr map map_dbl
 #'
 #' @title Goalie Stats
 #'

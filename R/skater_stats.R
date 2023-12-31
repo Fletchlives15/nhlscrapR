@@ -1,9 +1,8 @@
 #' @importFrom jsonlite fromJSON
-#' @import data.table
+#' @importFrom data.table data.table
 #' @importFrom janitor clean_names
-#' @import dplyr
-#' @import purrr
-#' @import tidyr
+#' @importFrom dplyr relocate select arrange between where
+#' @importFrom purrr map map_dbl
 #'
 #' @title Skater Statistics
 #'
@@ -47,9 +46,9 @@ get_skater_stats <- function(year_start, year_end){
 
   stats_clean <- stats |>
     janitor::clean_names() |>
-    relocate(season_id, team_abbrevs, player_id, skater_full_name, position_code, shoots_catches, .before = 1) |>
-    select(-last_name) |>
-    arrange(season_id, player_id, team_abbrevs)
+    dplyr::relocate(season_id, team_abbrevs, player_id, skater_full_name, position_code, shoots_catches, .before = 1) |>
+    dplyr::select(-last_name) |>
+    dplyr::arrange(season_id, player_id, team_abbrevs)
 
   print(Sys.time() - strt)
 

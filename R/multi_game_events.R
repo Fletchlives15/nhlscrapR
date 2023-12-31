@@ -1,5 +1,8 @@
-#' @import doParallel
-#' @import parallel
+#' @importFrom foreach foreach `%dopar%`
+#' @importFrom parallel makeCluster detectCores stopCluster
+#' @importFrom doParallel registerDoParallel
+#' @importFrom dplyr bind_rows
+#'
 #'
 #' @title Multi Game Events
 #'

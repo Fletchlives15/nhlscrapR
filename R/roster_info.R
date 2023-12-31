@@ -1,9 +1,9 @@
 #' @importFrom jsonlite fromJSON
-#' @import data.table
+#' @importFrom data.table data.table
 #' @importFrom janitor clean_names
-#' @import dplyr
-#' @import purrr
-#' @import tidyr
+#' @importFrom dplyr filter between select bind_cols full_join relocate where
+#' @importFrom purrr map map_df
+#' @importFrom tidyr unite
 #'
 #' @title Roster Information
 #'

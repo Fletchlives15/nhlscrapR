@@ -6,3 +6,6 @@
 ^_pkgdown\.yml$
 ^docs$
 ^pkgdown$
+^NEWS\.md$
+^README\.md$
+^nhlscRaper\.Rproj$

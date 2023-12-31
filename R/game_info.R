@@ -1,8 +1,7 @@
 #' @importFrom jsonlite fromJSON
-#' @import data.table
+#' @importFrom data.table data.table
 #' @importFrom janitor clean_names
-#' @import dplyr
-#' @import tidyr
+#' @importFrom dplyr mutate relocate rename filter between where
 #' @importFrom lubridate ymd_hms
 #'
 #' @title Game Information

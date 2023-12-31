@@ -1,5 +1,5 @@
 #' @importFrom jsonlite fromJSON
-#' @import data.table
+#' @importFrom data.table data.table
 #' @importFrom janitor clean_names
 #'
 #' @title Game Events
