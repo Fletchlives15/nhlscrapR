@@ -4,10 +4,17 @@
 #' @import dplyr
 #' @import tidyr
 #'
+#' @title Roster Information
+#'
+#' @description
+#' Function that scrapes the NHL API for NHL team information.
+#'
+#' @rdname nhl_teams
+#'
 #' @export
 #'
 
-nhl_teams <- function(){
+get_nhl_teams <- function(){
 
   strt <- Sys.time()
 

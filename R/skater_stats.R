@@ -5,10 +5,20 @@
 #' @import purrr
 #' @import tidyr
 #'
+#' @title Skater Statistics
+#'
+#' @description
+#' Function that scrapes the NHL API for skater statistics between specified years.
+#'
+#' @param year_start First desired year to scrape from.
+#' @param year_end Last desired year to scrape to.
+#'
+#' @rdname skater_stats
+#'
 #' @export
 #'
 
-skater_stats <- function(year_start, year_end){
+get_skater_stats <- function(year_start, year_end){
 
   strt <- Sys.time()
 

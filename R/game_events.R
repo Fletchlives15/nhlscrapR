@@ -2,11 +2,20 @@
 #' @import data.table
 #' @importFrom janitor clean_names
 #'
+#' @title Game Events
+#'
+#' @description
+#' Function that scrapes NHL API for single game event data.
+#'
+#' @param game_id ID for single game
+#'
+#' @rdname game_events
+#'
 #' @export
 #'
 
 
-game_events <- function(game_id){
+get_game_events <- function(game_id){
 
   strt <- Sys.time()
 

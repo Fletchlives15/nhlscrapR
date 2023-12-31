@@ -5,10 +5,21 @@
 #' @import purrr
 #' @import tidyr
 #'
+#' @title Roster Information
+#'
+#' @description
+#' Function that scrapes the NHL API for team rosters between specified years for specified teams.
+#'
+#' @param team_tricode Three letter code that specifies which team you would like to pull data for.
+#' @param year_start First desired year to scrape from.
+#' @param year_end Last desired year to scrape to.
+#'
+#' @rdname roster_info
+#'
 #' @export
 #'
 
-roster_info <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR", "SEN", "HAM", "PIR", "QUA", "DCG",
+get_roster_info <- function(team_tricode = c("ATL", "HFD", "MNS", "QUE", "WIN", "CLR", "SEN", "HAM", "PIR", "QUA", "DCG",
                                          "MWN", "QBD", "MMR", "NYA", "SLE", "OAK", "AFM", "KCS", "CLE", "DFL", "BRK",
                                          "NJD", "CGS", "TAN", "TSP", "DET", "BOS", "WPG", "SJS", "PIT", "TBL", "PHI",
                                          "TOR", "BUF", "CAR", "ARI", "CGY", "MTL", "WSH", "LAK", "VAN", "COL", "NSH",

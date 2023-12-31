@@ -5,10 +5,20 @@
 #' @import purrr
 #' @import tidyr
 #'
+#' @title Goalie Stats
+#'
+#' @description
+#' Function that scrapes the NHL API for goalie statistics between specified years.
+#'
+#' @param year_start First desired year to scrape from.
+#' @param year_end Last desired year to scrape to.
+#'
+#' @rdname goalie_stats
+#'
 #' @export
 #'
 
-goalie_stats <- function(year_start, year_end){
+get_goalie_stats <- function(year_start, year_end){
 
   strt <- Sys.time()
 

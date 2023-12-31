@@ -1,10 +1,19 @@
 #' @import doParallel
 #' @import parallel
 #'
+#' @title Multi Game Events
+#'
+#' @description
+#' Function that scrapes the NHL API for event data for multiple games.
+#'
+#' @param game_ids string of game IDs
+#'
+#' @rdname multi_game_events
+#'
 #' @export
 #'
 
-all_game_events <- function(game_ids){
+get_multi_game_events <- function(game_ids){
 
   strt <- Sys.time()
 

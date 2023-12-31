@@ -5,12 +5,22 @@
 #' @import tidyr
 #' @importFrom lubridate ymd_hms
 #'
+#' @title Game Information
+#'
+#' @description
+#' Function that scrapes the NHL API for game information between specified years.
+#'
+#' @param year_start First desired year to scrape from.
+#' @param year_end Last desired year to scrape to.
+#'
+#'
+#'
 #' @export
 #'
 
 ### function to pull games between seasons
 ## game type 1 = preseason, 2 = reg season, 3 = post season
-game_info <- function(year_start, year_end){
+get_game_info <- function(year_start, year_end){
 
   strt <- Sys.time()
 
