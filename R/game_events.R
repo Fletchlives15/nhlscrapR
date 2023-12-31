@@ -9,7 +9,7 @@
 #'
 #' @param game_id ID for single game
 #'
-#' @rdname game_events
+#' @rdname get_game_events
 #'
 #' @export
 #'

@@ -11,10 +11,10 @@
 #' Function that scrapes the NHL API for team rosters between specified years for specified teams.
 #'
 #' @param team_tricode Three letter code that specifies which team you would like to pull data for.
-#' @param year_start First desired year to scrape from.
-#' @param year_end Last desired year to scrape to.
+#' @param year_start First desired year to scrape from in YYYY format.
+#' @param year_end Last desired year to scrape to in YYYY format.
 #'
-#' @rdname roster_info
+#' @rdname get_roster_info
 #'
 #' @export
 #'

@@ -8,7 +8,7 @@
 #'
 #' @param game_ids string of game IDs
 #'
-#' @rdname multi_game_events
+#' @rdname get_multi_game_events
 #'
 #' @export
 #'

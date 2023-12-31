@@ -9,7 +9,7 @@
 #' @description
 #' Function that scrapes the NHL API for NHL team information.
 #'
-#' @rdname nhl_teams
+#' @rdname get_nhl_teams
 #'
 #' @export
 #'

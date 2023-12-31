@@ -10,10 +10,10 @@
 #' @description
 #' Function that scrapes the NHL API for game information between specified years.
 #'
-#' @param year_start First desired year to scrape from.
-#' @param year_end Last desired year to scrape to.
+#' @param year_start First desired year to scrape from in YYYY format.
+#' @param year_end Last desired year to scrape to in YYYY format.
 #'
-#'
+#' @rdname get_game_info
 #'
 #' @export
 #'

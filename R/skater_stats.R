@@ -10,10 +10,10 @@
 #' @description
 #' Function that scrapes the NHL API for skater statistics between specified years.
 #'
-#' @param year_start First desired year to scrape from.
-#' @param year_end Last desired year to scrape to.
+#' @param year_start First desired year to scrape from in YYYY format.
+#' @param year_end Last desired year to scrape to in YYYY format.
 #'
-#' @rdname skater_stats
+#' @rdname get_skater_stats
 #'
 #' @export
 #'
@@ -40,7 +40,7 @@ get_skater_stats <- function(year_start, year_end){
 
       map_df(season_ids, function(season){
 
-        fromJSON(paste0("https://api.nhle.com/stats/rest/en/skater/summary?limit=",page * 100,"&start=",page * 100 - 99,"&cayenneExp=seasonId=",season))$data
+        fromJSON(paste0("https://api.nhle.com/stats/rest/en/skater/summary?limit=",page * 100,"&start=",page * 100 - 99,"&sort=playerId&cayenneExp=seasonId=",season))$data
 
      })
   })
@@ -48,7 +48,8 @@ get_skater_stats <- function(year_start, year_end){
   stats_clean <- stats |>
     janitor::clean_names() |>
     relocate(season_id, team_abbrevs, player_id, skater_full_name, position_code, shoots_catches, .before = 1) |>
-    select(-last_name)
+    select(-last_name) |>
+    arrange(season_id, player_id, team_abbrevs)
 
   print(Sys.time() - strt)
 
