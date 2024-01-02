@@ -83,35 +83,35 @@
 </h2>
 <p><strong>Team and roster information:</strong></p>
 <ol style="list-style-type: decimal">
-<li>call teams: <code>teams &lt;- nhl_teams()</code>
+<li>call teams: <code>teams &lt;- get_nhl_teams()</code>
 </li>
 <li>select which team or teams you want: <code>det_rw &lt;- teams[team_id == 17][,tri_code]</code>
 </li>
-<li>Input years you want: <code>players &lt;- roster_info(team_tricode = det_rw, year_start = 2022, year_end = 2023)</code>
+<li>Input years you want: <code>players &lt;- get_roster_info(team_tricode = det_rw, year_start = 2022, year_end = 2023)</code>
 </li>
 </ol>
 <p>If you want all players for a specific year you can leave “team_tricode” empty and just call years.</p>
 <p><strong>Summary skater/goalie stats:</strong></p>
 <p>If you just want summary stats for a year all you need to do is specify the years you want.</p>
-<p><code>skater &lt;- skater_stats(year_start = 2022, year_end = 2023)</code></p>
-<p><code>goalies &lt;- goalie_stats(year_start = 2022, year_end = 2023)</code></p>
+<p><code>skater &lt;- get_skater_stats(year_start = 2022, year_end = 2023)</code></p>
+<p><code>goalies &lt;- get_goalie_stats(year_start = 2022, year_end = 2023)</code></p>
 <p><strong>Event Data:</strong></p>
 <p><em>Single Game:</em></p>
 <ol style="list-style-type: decimal">
-<li>Find games for the specified years: <code>games &lt;- game_info(year_start = 2022, year_end = 2023)</code>
+<li>Find games for the specified years: <code>games &lt;- get_game_info(year_start = 2022, year_end = 2023)</code>
 </li>
 <li>Pull specific game id: <code>game_id &lt;- games[,game_id[1]]</code>
 </li>
-<li>Run function: <code>one_game_events &lt;- game_events(game_id = game_id)</code>
+<li>Run function: <code>one_game_events &lt;- get_game_events(game_id = game_id)</code>
 </li>
 </ol>
 <p><em>Multiple Games:</em></p>
 <ol style="list-style-type: decimal">
-<li>Find games for the specified years: <code>games &lt;- game_info(year_start = 2022, year_end = 2023)</code>
+<li>Find games for the specified years: <code>games &lt;- get_game_info(year_start = 2022, year_end = 2023)</code>
 </li>
 <li>Pull game ids: <code>game_ids &lt;- games[,game_id]</code>
 </li>
-<li>Run function: <code>multi_game_events &lt;- all_game_events(game_ids = game_ids)</code>
+<li>Run function: <code>multi_game_events &lt;- get_multi_game_events(game_ids = game_ids)</code>
 </li>
 </ol>
 </div>
