@@ -1,5 +1,5 @@
 
-# nhlscrRaper
+# nhlscrapeR
 
 <!-- badges: start -->
 
