@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(nhlscrRaper)
+library(nhlscrapeR)
 
-test_check("nhlscrRaper")
+test_check("nhlscrapeR")
