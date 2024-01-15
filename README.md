@@ -10,8 +10,8 @@ The goal of nhlscrapeR is to allow someone to scrape data from the NHL API to be
 ## Installation
 
 1. If not already downloaded: `install.packages("devtools")`
-2. To install package: `devtools::install_github("Fletchlives15/nhlscRaper")` or `install.packages("nhlscRaper")`
-3. Lastly, call package: `library(nhlscRaper)`
+2. To install package: `devtools::install_github("Fletchlives15/nhlscrapeR")` or `install.packages("nhlscrapeR")`
+3. Lastly, call package: `library(nhlscrapeR)`
 
 ## Functions
 
