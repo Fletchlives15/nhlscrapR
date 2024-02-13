@@ -26,7 +26,7 @@ get_multi_game_events <- function(game_ids){
   events <- foreach(i = game_ids, .combine=bind_rows, .multicombine = TRUE,
                           .errorhandling = 'remove', .export = c("get_game_events"),
                           .packages = c("jsonlite", "data.table", "janitor")) %dopar%
-    {game_events(i)}
+    {get_game_events(i)}
 
   print(Sys.time()-strt)
 
