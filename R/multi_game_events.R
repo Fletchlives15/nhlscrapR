@@ -24,7 +24,7 @@ get_multi_game_events <- function(game_ids){
   registerDoParallel(cl)
 
   events <- foreach(i = game_ids, .combine=bind_rows, .multicombine = TRUE,
-                          .errorhandling = 'remove', .export = c("game_events"),
+                          .errorhandling = 'remove', .export = c("get_game_events"),
                           .packages = c("jsonlite", "data.table", "janitor")) %dopar%
     {game_events(i)}
 
