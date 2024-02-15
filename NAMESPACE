@@ -2,8 +2,10 @@
 
 export(get_game_events)
 export(get_game_info)
+export(get_game_shifts)
 export(get_goalie_stats)
 export(get_multi_game_events)
+export(get_multi_game_shifts)
 export(get_nhl_teams)
 export(get_roster_info)
 export(get_skater_stats)
