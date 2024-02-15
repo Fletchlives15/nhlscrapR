@@ -1,45 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/404.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/404.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/LICENSE-text.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/LICENSE.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/authors.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/authors.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/index.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/index.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/news/index.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/news/index.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_game_events.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/reference/get_game_events.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_game_info.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/reference/get_game_info.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_goalie_stats.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/reference/get_game_shifts.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_multi_game_events.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/reference/get_goalie_stats.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_nhl_teams.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/reference/get_multi_game_events.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_roster_info.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/reference/get_multi_game_shifts.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/reference/get_skater_stats.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/reference/get_nhl_teams.html</loc>
   </url>
   <url>
-    <loc>https://fletchlives15.github.io/nhlscRaper/reference/index.html</loc>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/reference/get_roster_info.html</loc>
+  </url>
+  <url>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/reference/get_skater_stats.html</loc>
+  </url>
+  <url>
+    <loc>https://fletchlives15.github.io/nhlscrapeR/reference/index.html</loc>
   </url>
 </urlset>

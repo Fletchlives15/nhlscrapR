@@ -2,8 +2,8 @@ pandoc: 2.19.2
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-02-13T18:00Z
+last_built: 2024-02-15T18:43Z
 urls:
-  reference: https://fletchlives15.github.io/nhlscRaper/reference
-  article: https://fletchlives15.github.io/nhlscRaper/articles
+  reference: https://fletchlives15.github.io/nhlscrapeR/reference
+  article: https://fletchlives15.github.io/nhlscrapeR/articles
 
