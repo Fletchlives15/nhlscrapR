@@ -11,7 +11,7 @@
 #'
 #' @param game_ids string of game IDs
 #'
-#' @rdname get_multi_game_events
+#' @rdname get_multi_game_rosters
 #'
 #' @export
 #'

@@ -3,7 +3,7 @@
 #' @importFrom janitor clean_names
 #' @importFrom dplyr select
 #'
-#' @title Game Events
+#' @title Game Roster
 #'
 #' @description
 #' Function that scrapes NHL API for single game roster data.
