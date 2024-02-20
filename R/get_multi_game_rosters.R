@@ -4,7 +4,7 @@
 #' @importFrom dplyr bind_rows
 #'
 #'
-#' @title Multi Game Events
+#' @title Multi Game Rosters
 #'
 #' @description
 #' Function that scrapes the NHL API for roster data for multiple games.
